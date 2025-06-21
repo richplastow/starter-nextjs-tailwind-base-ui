@@ -1,12 +1,22 @@
 {
-  "name": "with-tailwind",
-  "private": true,
+  "name": "starter-nextjs-tailwind-base-ui",
+  "version": "0.0.1",
+  "description": "Turborepo web app starter, with Next.js, Storybook, Tailwind CSS and MUI's Base UI",
+  "homepage": "https://github.com/richplastow/starter-nextjs-tailwind-base-ui#readme",
+  "bugs": {
+    "url": "https://github.com/richplastow/starter-nextjs-tailwind-base-ui/issues"
+  },
+  "author": "Rich Plastow",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richplastow/starter-nextjs-tailwind-base-ui.git"
+  },
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
     "check-types": "turbo run check-types",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "dev": "turbo run dev",
+    "format": "prettier --write **/*.{css,json,md,ts,tsx}",
+    "lint": "turbo run lint"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
@@ -14,11 +24,12 @@
     "turbo": "^2.5.4"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22.16 <=23.11"
   },
-  "packageManager": "npm@10.9.2",
+  "private": true,
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "packageManager": "npm@10.9.2"
 }
