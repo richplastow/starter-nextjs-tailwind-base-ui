@@ -14,6 +14,7 @@
   "scripts": {
     "build": "turbo run build",
     "check-types": "turbo run check-types",
+    "clean": "turbo run clean && turbo daemon stop && rm -rf .next .turbo node_modules/.cache",
     "dev": "turbo run dev",
     "format": "prettier --write **/*.{css,json,md,ts,tsx}",
     "lint": "turbo run lint"

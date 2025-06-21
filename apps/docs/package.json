@@ -1,14 +1,13 @@
 {
   "name": "docs",
   "version": "1.0.0",
-  "type": "module",
-  "private": true,
   "scripts": {
-    "dev": "next dev --port 3000 --turbopack",
     "build": "next build",
-    "start": "next start",
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf .next .turbo coverage.json node_modules playwright-report storybook-static test-results",
+    "dev": "next dev --port 3000 --turbopack",
     "lint": "next lint --max-warnings 0",
-    "check-types": "tsc --noEmit"
+    "start": "next start"
   },
   "dependencies": {
     "@repo/ui": "*",
@@ -30,5 +29,7 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5",
     "typescript": "5.8.2"
-  }
+  },
+  "private": true,
+  "type": "module"
 }
