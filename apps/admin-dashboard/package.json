@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "admin-dashboard",
   "version": "1.0.0",
   "scripts": {
     "build": "next build",
@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@repo/ui": "*",
+    "@repo/xx": "*",
     "next": "^15.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
