@@ -1,0 +1,2 @@
+# Prevent MacOS-specific sub-packages from breaking Vercel deployment.
+package-lock.json
