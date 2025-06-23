@@ -7,7 +7,9 @@
     "clean": "rm -rf .next .turbo coverage.json node_modules playwright-report storybook-static test-results",
     "dev": "next dev --port 3001 --turbopack",
     "lint": "next lint --max-warnings 0",
-    "start": "next start"
+    "start": "next start",
+    "test:unit": "vitest --run",
+    "test:unit:watch": "vitest"
   },
   "dependencies": {
     "@repo/xx": "*",
@@ -20,6 +22,7 @@
     "@repo/eslint-config": "*",
     "@repo/tailwind-config": "*",
     "@repo/typescript-config": "*",
+    "@repo/vitest-config": "*",
     "@tailwindcss/postcss": "^4.1.5",
     "@types/node": "^22.15.30",
     "@types/react": "^19.1.0",
@@ -28,7 +31,8 @@
     "eslint": "^9.29.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5",
-    "typescript": "5.8.2"
+    "typescript": "5.8.2",
+    "vitest": "^3.2.4"
   },
   "private": true,
   "type": "module"

@@ -12,17 +12,21 @@
     "clean": "rm -rf .turbo coverage.json dist node_modules storybook-static",
     "dev:components": "tsc --watch",
     "dev:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
-    "lint": "eslint src --max-warnings 0"
+    "lint": "eslint src --max-warnings 0",
+    "test:unit": "vitest --run",
+    "test:unit:watch": "vitest"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/tailwind-config": "*",
     "@repo/typescript-config": "*",
+    "@repo/vitest-config": "*",
     "@tailwindcss/cli": "^4.1.5",
     "@types/react": "^19.1.0",
     "eslint": "^9.29.0",
     "tailwindcss": "^4.1.5",
-    "typescript": "5.8.2"
+    "typescript": "5.8.2",
+    "vitest": "^3.2.4"
   },
   "peerDependencies": {
     "react": "^19"
