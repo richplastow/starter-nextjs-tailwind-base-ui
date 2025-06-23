@@ -14,6 +14,7 @@
     "editor.formatOnSave": true, // format using Prettier on save
     "editor.codeActionsOnSave": {
       // "source.fixAll.eslint":"always", // uncomment this to auto-fix ESLint issues on save
+      "source.organizeImports": "always",
     },
     "editor.rulers": [80, 120], // add vertical rulers at 80 and 120 characters
     "editor.tabSize": 2, // without this, VS Code defaults to 4 spaces, despite Prettier's `tabWidth: 2` setting
