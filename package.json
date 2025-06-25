@@ -19,16 +19,18 @@
     "format": "prettier --write **/*.{css,json,md,ts,tsx}",
     "lint": "turbo run lint",
     "ok": "npm run format && turbo run --parallel lint check-types && npm test",
+    "prepare": "husky",
     "test": "npm run test:unit",
     "test:unit": "turbo run test:unit",
-    "test:unit:watch": "turbo run test:unit:watch",
-    "test:unit:view-report": "turbo run test:unit:view-report"
+    "test:unit:view-report": "turbo run test:unit:view-report",
+    "test:unit:watch": "turbo run test:unit:watch"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@vitejs/plugin-react": "^4.6.0",
+    "husky": "^9.1.7",
     "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
     "prettier-plugin-organize-imports": "^4.1.0",
