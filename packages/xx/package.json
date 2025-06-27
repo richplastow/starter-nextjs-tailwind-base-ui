@@ -14,7 +14,10 @@
     "dev:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
     "lint": "eslint src --max-warnings 0",
     "test:unit": "vitest --run",
-    "test:unit:watch": "vitest"
+    "test:unit:watch": "vitest",
+    "storybook:build": "storybook build --docs",
+    "storybook:dev": "storybook dev -p 6006 --loglevel trace",
+    "storybook:start": "serve storybook-static"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",

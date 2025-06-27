@@ -20,6 +20,21 @@
       "cache": false,
       "persistent": true
     },
+    "@repo/xx#storybook:build": {
+      "dependsOn": ["^build"],
+      "inputs": [".storybook/**", "package.json", "src/**"],
+      "outputs": ["storybook-static/**"]
+    },
+    "storybook:dev": {
+      "cache": false,
+      "dependsOn": ["^dev"],
+      "persistent": true
+    },
+    "storybook:start": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "persistent": true
+    },
     "test:unit": {
       "dependsOn": ["test:unit:transit-node"]
     },

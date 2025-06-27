@@ -1,1 +1,1 @@
-echo "Validation of $1 to go here" && exit 123
+npx --no -- commitlint --edit $1
