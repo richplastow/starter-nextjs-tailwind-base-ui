@@ -11,7 +11,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    title: "Placeholder Card Hello Ale!",
+    title: "Placeholder Card",
     children: "This is just a placeholder for the 'Card' story",
     href: "#",
   },

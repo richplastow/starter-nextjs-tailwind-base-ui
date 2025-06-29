@@ -20,18 +20,17 @@
     "lint": "turbo run lint",
     "ok": "npm run format && turbo run --parallel lint check-types && npm test",
     "prepare": "husky",
+    "storybook:build": "turbo run storybook:build",
+    "storybook:dev": "turbo run storybook:dev",
+    "storybook:start": "turbo run storybook:start",
     "test": "npm run test:unit",
     "test:unit": "turbo run test:unit",
     "test:unit:view-report": "turbo run test:unit:view-report",
-    "test:unit:watch": "turbo run test:unit:watch",
-    "storybook:start": "turbo run storybook:start",
-    "storybook:build": "turbo run storybook:build",
-    "storybook:dev": "turbo run storybook:dev"
+    "test:unit:watch": "turbo run test:unit:watch"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^9.0.13",
     "@storybook/react-vite": "^9.0.13",
     "@testing-library/dom": "^10.4.0",
