@@ -36,8 +36,7 @@
       "persistent": true
     },
     "test:unit": {
-      "dependsOn": ["test:unit:transit-node"],
-      "persistent": false
+      "dependsOn": ["test:unit:transit-node"]
     },
     "test:unit:transit-node": {
       "dependsOn": ["^test:unit:transit-node"]

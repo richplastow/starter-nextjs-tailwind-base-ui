@@ -1,0 +1,26 @@
+/** @file Exports the monorepo's Xx{{noun}} component. */
+
+import type { ReactElement } from 'react';
+import type { Xx{{noun}}Props } from './{{kebabCase noun}}-types';
+import { buildClassName } from './{{kebabCase noun}}-utilities';
+
+/** #### The monorepo's Xx{{noun}} component
+ *
+ * - TODO fill this list with information and usage instructions
+ */
+export function Xx{{noun}}({
+  _replaceThisWithThePropNameTODO = "TODO Make sure this prop's default value is correct",
+  children,
+  ...htmlAttributes
+}: Xx{{noun}}Props): ReactElement {
+  const { className } = htmlAttributes;
+  return (
+    <h3
+      {...htmlAttributes}
+      className={buildClassName(className)}
+      {...(_replaceThisWithThePropNameTODO && { foo: 'bar' })}
+    >
+      {children}
+    </h3>
+  );
+}

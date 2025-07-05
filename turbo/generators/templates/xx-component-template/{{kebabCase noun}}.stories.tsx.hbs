@@ -1,0 +1,25 @@
+/** @file Defines http://localhost:6006/?story=/docs/xx-{{group}}-xx{{lowerCase noun}} */
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { Xx{{noun}} } from './{{kebabCase noun}}';
+import { happypath, maximal, minimal } from './{{kebabCase noun}}-mocks';
+
+// Set up the Xx{{noun}} Storybook stories.
+const meta: Meta<typeof Xx{{noun}}> = {
+  component: Xx{{noun}},
+  parameters: {
+    layout: 'centered', // center the component in the canvas
+  },
+  tags: ['autodocs'], // generate an Autodocs page
+  title: "Xx/{{group}}/Xx{{noun}}",
+};
+export default meta;
+
+// Define stories in the order they should appear in the Storybook sidebar.
+type Story = StoryObj<typeof Xx{{noun}}>;
+export const BasicUsage: Story = {
+  args: { children: 'Basic Usage' },
+};
+export const HappyPath: Story = { args: happypath };
+export const Maximal: Story = { args: maximal };
+export const Minimal: Story = { args: minimal };

@@ -9,7 +9,7 @@ const config = {
     // Sort, combine and remove unused imports, using the `organizeImports`
     // feature of the TypeScript language service API.
     // See `settings -> editor.codeActionsOnSave -> source.organizeImports` in
-    // the monorepo.code-workspace file.
+    // the repo's .code-workspace file.
     "prettier-plugin-organize-imports",
   ],
 };

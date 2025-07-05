@@ -1,0 +1,6 @@
+/** @file Pure functions, private to the Xx{{noun}}
+component. */ import { twMerge } from '../../xx-utilities'; /** #### Builds the
+Xx{{noun}}'s `className` string * @param classLists - Zero or more
+space-delimited strings of CSS classes */ export const buildClassName =
+(...classLists: (string | undefined)[]): string => twMerge( 'p-4 mb-4 border-4
+border-gray-400 text-2xl', ...classLists, );

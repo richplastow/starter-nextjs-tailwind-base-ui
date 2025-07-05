@@ -1,0 +1,38 @@
+/** @file Three collections of props, for mocking the Xx{{noun}} component. */
+
+import type { Xx{{noun}}Props } from './{{kebabCase noun}}-types';
+
+/** #### Mocks typical Xx{{noun}} usage */
+export const happypath: Xx{{noun}}Props = {
+  // General HTML attributes:
+  children: 'Happypath',
+  className: 'happypath-css-class another-happypath-class',
+  id: 'happypath-{{kebabCase noun}}-id',
+  style: {}, // TODO fill with happypath styles
+  // Props with no equivalent attribute:
+  _replaceThisWithThePropNameTODO: 'TODO Replace this with a happypath value',
+};
+
+/** #### Mocks over-the-top Xx{{noun}} usage, which could break the layout */
+export const maximal: Xx{{noun}}Props = {
+  // General HTML attributes:
+  children:
+    'Check that pneumonoultramicroscopicsilicovolcanoconiosis ' +
+    'doesn’t break the Xx{{noun}}',
+  className: 'a-long-valid-classname-here and-another-long-valid-classname',
+  id: 'a-long-valid-id-attribute-here and-another-long-valid-id-attribute',
+  style: { background: '#ffffff' }, // TODO fill with maximal styles
+  // Props with no equivalent attribute:
+  _replaceThisWithThePropNameTODO: 'TODO Replace this with a maximal value',
+};
+
+/** #### Mocks Xx{{noun}} usage with zeroes, empty strings, empty arrays etc */
+export const minimal: Xx{{noun}}Props = {
+  // General HTML attributes:
+  children: '',
+  className: '',
+  id: '', // the empty string is not actually a valid HTML5 id attribute
+  style: {},
+  // Props with no equivalent attribute:
+  _replaceThisWithThePropNameTODO: '',
+};
