@@ -1,0 +1,60 @@
+/** @file All of the unit tests that target Xx{{noun}} in isolation. */
+
+import { render, screen } from '@testing-library/react';
+import { describe, expect, test } from 'vitest';
+import { Xx{{noun}} } from './{{kebabCase noun}}';
+import { happypath, maximal, minimal } from './{{kebabCase noun}}-mocks';
+import { buildClassName } from './{{kebabCase noun}}-utilities';
+
+describe('<Xx{{noun}} />', () => {
+  test('Default props', () => {
+    render(<Xx{{noun}}>Default Props</Xx{{noun}}>);
+    const el = screen.getByRole('TODO use the proper role');
+
+    expect(el.innerHTML).to.equal('Default Props');
+    expect(el).toHaveAttributes({
+      id: null,
+      class: buildClassName(),
+      style: null,
+    });
+  });
+
+  test('Happypath props', () => {
+    const { children, className, id } = happypath;
+    render(<Xx{{noun}} {...happypath} />);
+    const el = screen.getByRole('TODO use the proper role');
+
+    expect(el.innerHTML).to.equal(children);
+    expect(el).toHaveAttributes({
+      id,
+      class: buildClassName(className),
+      style: null,
+    });
+  });
+
+  test('Maximal props', () => {
+    const { children, className, id } = maximal;
+    render(<Xx{{noun}} {...maximal} />);
+    const el = screen.getByRole('TODO use the proper role');
+
+    expect(el.innerHTML).to.equal(children);
+    expect(el).toHaveAttributes({
+      id,
+      class: buildClassName(className),
+      style: 'background: rgb(255, 255, 255);',
+    });
+  });
+
+  test('Minimal props', () => {
+    const { children, className, id } = minimal;
+    render(<Xx{{noun}} {...minimal} />);
+    const el = screen.getByRole('TODO use the proper role');
+
+    expect(el.innerHTML).to.equal(children);
+    expect(el).toHaveAttributes({
+      id,
+      class: buildClassName(className),
+      style: null,
+    });
+  });
+});

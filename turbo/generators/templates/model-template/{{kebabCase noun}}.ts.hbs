@@ -1,0 +1,11 @@
+/** @file Class definitions for the {{pascalCase group}}{{noun}} model. */
+
+import { I{{pascalCase group}}{{noun}}, {{pascalCase group}}{{noun}}Type } from "./{{kebabCase noun}}-types";
+
+/** Implements the I{{pascalCase group}}{{noun}} interface */
+export class {{pascalCase group}}{{noun}} implements I{{pascalCase group}}{{noun}} {
+  constructor(
+    public readonly {{camelCase noun}}Id: string,
+    public readonly type: {{pascalCase group}}{{noun}}Type,
+  ) {}
+}

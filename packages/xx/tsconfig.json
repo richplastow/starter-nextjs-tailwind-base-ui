@@ -6,3 +6,12 @@
   "exclude": ["dist", "build", "node_modules"],
   "include": ["src", "../vitest-config/configs/vitest-setup.ts"]
 }
+// TODO NEXT maybe prefer this:
+// {
+//   "compilerOptions": {
+//     "outDir": "dist"
+//   },
+//   "exclude": ["build", "dist", "node_modules"],
+//   "extends": "@repo/typescript-config/react-library.json",
+//   "include": ["src"]
+// }

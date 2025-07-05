@@ -1,0 +1,17 @@
+/** @file Reusable {{pascalCase group}}{{noun}} types. */
+
+export type {{pascalCase group}}{{noun}}Type =
+  /** #### TODO Replace this line with an overview of the prop, 70 chars or less */
+  | "_replaceThisWithTypeName1TODO"
+
+  /** #### TODO Replace this line with an overview of the prop, 70 chars or less */
+  | "_replaceThisWithTypeName2TODO";
+
+/** #### Interface of the monorepo's {{pascalCase group}}{{noun}} model */
+export interface I{{pascalCase group}}{{noun}} {
+  /** Identifier, unique among {{noun}} instances */
+  {{camelCase noun}}Id: string;
+
+  /** The kind of {{noun}}, e.g. "_replaceThisWithTypeName1TODO" or "_replaceThisWithTypeName2TODO" */
+  type: {{pascalCase group}}{{noun}}Type;
+}
